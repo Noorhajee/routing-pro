@@ -1,0 +1,18 @@
+<table class="table" >
+  <thead class="bg-dark text-light m-4 p-4">
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>firstName</th>
+    <th>lastName</th>
+    <th>Picture</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of resUser" (click)="onclick(user.id)">
+    <td>{{user?.id}}</td>
+		<td>{{user?.title}}</td>
+    <td>{{user?.firstName}}</td>
+    <td>{{user?.lastName}}</td>
+  </tr>
+</table>
